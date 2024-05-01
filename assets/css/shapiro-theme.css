@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  font-family: "PT Serif", serif;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cwe-primary-color);
+}
+
+a:active {
+  background: transparent;
+  color: inherit;
+}
+
+a:focus {
+  outline: 0 solid;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+/* Header area */
+
+.header_navigation .navbar-nav li a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  padding: 18px;
+  margin-right: 22px;
+  transition: all 0.3s ease 0s;
+}
+
+.header_top {
+  background: #143e34;
+  padding: 15px 0;
+}
+
+.header_top_right {
+  align-self: end;
+  align-items: end;
+}
+
+.header_socials {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header_call_info {
+  display: flex;
+  align-items: center;
+}
+
+.header_call_info a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header_call_info a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.header_call_info a i {
+  margin-right: 4px;
+}
+
+.header_socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  width: 26px;
+  background: #dbaa0b;
+  color: #0b221a !important;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+}
+
+.header_socials a:not(:last-child) {
+  margin-right: 10px;
+}
+.header-style-one {
+  background: #143e34;
+  padding: 15px 0;
+}
+.header_navigation .navbar-nav li a:hover {
+  color: #ff9600;
+}
+.header-button-2 a {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: #fff;
+  padding: 10px 20px;
+  color: #143e34;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.22px;
+  transition: 0.3s;
+}
+.header_navigation .navbar-nav li:last-child a {
+  margin-right: 0;
+}
+.contact-form .wpcf7-spinner {
+  position: absolute;
+  left: 65%;
+  bottom: 10px;
+}
+.header-button-2 a:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.header-button-2 {
+  text-align: end;
+}
+.header-one-logo a.navbar-brand span {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  margin-left: 15px;
+}
+
+/* wlc area */
+.single-slide {
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.wlc__content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.slide-info h4 {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Slider CSS */
+
+.single-slide-item .row {
+  height: 700px;
+  text-align: center;
+}
+
+.single-slide-item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #000;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.single-slide-item h2 {
+  font-size: 100px;
+  color: #fff;
+}
+
+.slide-info {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+}
+
+.single-slide-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.slide-info h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+div.elementor-column-gap-default
+  > .elementor-row
+  > .elementor-column
+  > .elementor-element-populated {
+  padding: 0;
+}
+
+.slides .slick-arrow {
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  z-index: 3;
+  background: #000;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+  font-size: 20px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.slides .slick-arrow.fa-angle-right {
+  left: auto;
+  right: -5px;
+}
+
+ul.slick-dots {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+ul.slick-dots li button {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #7a7a7a;
+  text-indent: -9999px;
+  border: none;
+  margin: 5px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul.slick-dots li {
+  display: inline-block;
+}
+
+ul.slick-dots li.slick-active button {
+  background-color: #000;
+}
+
+.footer-simple {
+  background: #143e34;
+  padding: 15px 0;
+}
+.simple-footer-content p {
+  color: #fff;
+  text-align: center;
+  font-family: PT Serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  text-transform: capitalize;
+}
+.footer-main {
+  background: #143e34;
+  padding: 70px 0;
+}
+
+.footer-main h2.widget-title {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+}
+
+#aboutinfo_widget-2 .textwidget > p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#aboutinfo_widget-2 .textwidget img {
+  margin-bottom: 18px;
+}
+
+.menu-footer-menu-container ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-footer-menu-container ul.menu li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.menu-footer-menu-container ul.menu li a {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 15px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  font-weight: 400;
+}
+
+.menu-footer-menu-container ul.menu li a:before {
+  position: absolute;
+  left: 0;
+  content: "-";
+  font-family: "FontAwesome";
+  color: #fff;
+  top: -3px;
+  transition: all 0.3s ease 0s;
+}
+
+.menu-footer-menu-container ul.menu li:hover a {
+  margin-left: 5px;
+  color: #ff9600;
+}
+.header_call_info a:hover {
+  color: #ff9600;
+}
+.menu-footer-menu-container ul.menu li:hover a:before {
+  color: #ff9600;
+}
+#text-3 .textwidget p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
